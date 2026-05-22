@@ -1,0 +1,38 @@
+﻿<div class="container section">
+<h2 class="section-title text-center">Premium Calculator</h2>
+<p class="section-sub text-center">Calculate your premium based on selected term plan</p>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="form-box" style="margin:0;max-width:none">
+            <form id="calcForm">
+                <div class="mb-3">
+                    <label class="form-label">Insurance Type</label>
+                    <select id="type" class="form-select" required>
+                        <option value="life">Life Insurance</option>
+                        <option value="medical">Medical Insurance</option>
+                        <option value="motor">Motor Insurance</option>
+                        <option value="home">Home Insurance</option>
+                    </select>
+                </div>
+                <div class="mb-3"><label class="form-label">Sum Assured ($)</label><input id="sum" type="number" min="1000" value="100000" class="form-control" required></div>
+                <div class="mb-3"><label class="form-label">Term Plan (Years)</label><select id="term" class="form-select" required></select></div>
+                <div class="mb-3"><label class="form-label">Age</label><input id="age" type="number" min="18" max="75" value="30" class="form-control" required></div>
+                <button class="btn btn-accent w-100" type="submit">Calculate Premium</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="result" class="form-box" style="margin:0;max-width:none;display:none">
+            <h5 style="color:var(--brand)">Premium Estimate</h5>
+            <hr>
+            <p>Type: <b id="r-type"></b></p>
+            <p>Sum Assured: <b>$<span id="r-sum"></span></b></p>
+            <p>Term: <b><span id="r-term"></span> years</b></p>
+            <p>Annual Premium: <b class="text-success">$<span id="r-annual"></span></b></p>
+            <p>Monthly Premium: <b class="text-success">$<span id="r-monthly"></span></b></p>
+            <button id="buyBtn" class="btn btn-accent w-100">Buy this Policy</button>
+        </div>
+    </div>
+</div>
+</div>

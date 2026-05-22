@@ -1,0 +1,189 @@
+:root {
+    --brand: #0a3d62;
+    --brand-2: #1e6091;
+    --accent: #f6b93b;
+    --soft: #f5f7fb;
+    --text: #1b2a41;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Segoe UI',Roboto,sans-serif;
+    color: var(--text);
+    background: #fff
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: .5px
+}
+
+.bg-brand {
+    background: linear-gradient(90deg,var(--brand),var(--brand-2)) !important
+}
+
+.btn-accent {
+    background: var(--accent);
+    border: none;
+    color: #1b2a41;
+    font-weight: 600
+}
+
+    .btn-accent:hover {
+        background: #e1a52a;
+        color: #000
+    }
+
+.hero {
+    background: linear-gradient(135deg,rgba(10,61,98,.85),rgba(30,96,145,.75)), url('https://images.unsplash.com/photo-1556742400-b5b7c5121f7c?auto=format&fit=crop&w=1600&q=60') center/cover;
+    color: #fff;
+    padding: 110px 0;
+    text-align: center
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 700
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        opacity: .95
+    }
+
+.section {
+    padding: 70px 0
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--brand)
+}
+
+.section-sub {
+    color: #6b7a90;
+    margin-bottom: 40px
+}
+
+.service-card {
+    border: none;
+    border-radius: 14px;
+    transition: .3s;
+    height: 100%;
+    box-shadow: 0 4px 18px rgba(10,61,98,.08)
+}
+
+    .service-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(10,61,98,.18)
+    }
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,var(--brand),var(--brand-2));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 18px
+}
+
+.bg-soft {
+    background: var(--soft)
+}
+
+.strategy-card {
+    border-left: 4px solid var(--accent);
+    background: #fff;
+    padding: 22px;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05)
+}
+
+footer {
+    background: #072a45;
+    color: #cfd9e4;
+    padding: 40px 0 20px;
+    margin-top: 60px
+}
+
+    footer a {
+        color: #cfd9e4;
+        text-decoration: none
+    }
+
+        footer a:hover {
+            color: var(--accent)
+        }
+
+.form-box {
+    background: #fff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(10,61,98,.12);
+    max-width: 480px;
+    margin: 40px auto
+}
+
+.dashboard-card {
+    border-radius: 12px;
+    padding: 22px;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,.1)
+}
+
+.bg-grad-1 {
+    background: linear-gradient(135deg,#0a3d62,#1e6091)
+}
+
+.bg-grad-2 {
+    background: linear-gradient(135deg,#0b8457,#27ae60)
+}
+
+.bg-grad-3 {
+    background: linear-gradient(135deg,#c0392b,#e67e22)
+}
+
+.bg-grad-4 {
+    background: linear-gradient(135deg,#8e44ad,#5b2c6f)
+}
+
+.table thead {
+    background: var(--brand);
+    color: #fff
+}
+
+.badge-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: .8rem
+}
+
+.scheme-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    transition: .3s;
+    height: 100%
+}
+
+    .scheme-card:hover {
+        transform: translateY(-4px)
+    }
+
+    .scheme-card .top {
+        padding: 18px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.1rem
+    }

@@ -1,0 +1,13 @@
+﻿<div class="container">
+    <div class="form-box">
+        <h3 class="text-center mb-4" style="color:var(--brand)"><i class="bi bi-person-plus"></i> Create Account</h3>
+        <form onsubmit="registerUser(event)">
+            <div class="mb-3"><label class="form-label">Full Name</label><input name="name" required class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Email</label><input name="email" type="email" required class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Phone</label><input name="phone" required class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Password</label><input name="password" type="password" required minlength="6" class="form-control"></div>
+            <button class="btn btn-accent w-100">Register</button>
+            <p class="text-center mt-3 small">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</div>

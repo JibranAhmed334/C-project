@@ -1,0 +1,22 @@
+﻿<div class="container section">
+    <h2 class="section-title text-center">Loan Against Policy</h2>
+    <p class="section-sub text-center">Borrow up to 80% of your policy value at competitive rates</p>
+    <div class="form-box">
+        <form onsubmit="applyLoan(event)">
+            <div class="mb-3"><label class="form-label">Loan Amount ($)</label><input name="amount" type="number" min="500" required class="form-control"></div>
+            <div class="mb-3">
+                <label class="form-label">Purpose</label>
+                <select name="purpose" class="form-select" required>
+                    <option value="">Select purpose</option>
+                    <option>Education</option>
+                    <option>Medical Emergency</option>
+                    <option>Home Renovation</option>
+                    <option>Business</option>
+                    <option>Personal</option>
+                </select>
+            </div>
+            <div class="mb-3"><label class="form-label">Tenure (Months)</label><input name="tenure" type="number" min="6" max="120" value="24" required class="form-control"></div>
+            <button class="btn btn-accent w-100">Submit Application</button>
+        </form>
+    </div>
+</div>

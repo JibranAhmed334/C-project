@@ -1,0 +1,27 @@
+﻿<div class="container section">
+    <h3 id="welcome" style="color:var(--brand)"></h3>
+    <p class="text-muted">Manage your policies, payments and loans in one place.</p>
+
+    <div class="row g-3 my-3">
+        <div class="col-md-3"><div class="dashboard-card bg-grad-1"><h6>Total Policies</h6><h2 id="stat-pol">0</h2></div></div>
+        <div class="col-md-3"><div class="dashboard-card bg-grad-2"><h6>Active</h6><h2 id="stat-active">0</h2></div></div>
+        <div class="col-md-3"><div class="dashboard-card bg-grad-3"><h6>Total Paid</h6><h2>$<span id="stat-paid">0</span></h2></div></div>
+        <div class="col-md-3"><div class="dashboard-card bg-grad-4"><h6>Loan Requests</h6><h2 id="stat-loans">0</h2></div></div>
+    </div>
+
+    <h4 class="mt-5">My Policies</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+            <thead><tr><th>Policy ID</th><th>Type</th><th>Sum</th><th>Term</th><th>Premium/yr</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="policy-rows"></tbody>
+        </table>
+    </div>
+
+    <h4 class="mt-5">My Loan Applications</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+            <thead><tr><th>Loan ID</th><th>Amount</th><th>Purpose</th><th>Tenure</th><th>Status</th></tr></thead>
+            <tbody id="loan-rows"></tbody>
+        </table>
+    </div>
+</div>
